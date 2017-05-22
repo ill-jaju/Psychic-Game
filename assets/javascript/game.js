@@ -16,6 +16,7 @@ var compChoice = letters[Math.floor(Math.random() * letters.length)];
 var reset = function() {
     guesses = 8;
     guessedLetters = [];
+//resets computer choice    
     compChoice = letters[Math.floor(Math.random() * letters.length)];
     }
 
@@ -38,7 +39,7 @@ document.onkeyup = function (event) {
     	losses++;
         reset();
     }
-    
+ //visual changes to html   
 	document.getElementById("wins").innerHTML = "Wins: " + wins;
     document.getElementById("losses").innerHTML = "Losses: " + losses;
     document.getElementById("guessLeft").innerHTML = "Guesses Left: " + guesses;
